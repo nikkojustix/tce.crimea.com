@@ -122,11 +122,12 @@ body {
     font-weight: 700;
     font-size: 28px;
     line-height: 32px;
-    color: $accent
+    color: $accent;
   }
 }
 
 .search {
+  width: 250px;
   background-color: $light-accent;
   border: 0;
   border-radius: 20px;
@@ -154,8 +155,8 @@ body {
     background-color: $primary;
   }
 
-  &__item:focus-within>.submenu,
-  &__item:hover>.submenu {
+  &__item:focus-within > .submenu,
+  &__item:hover > .submenu {
     clip: auto;
     width: auto;
     height: auto;
@@ -163,7 +164,7 @@ body {
     opacity: 1;
   }
 
-  .submenu &__item>&__list {
+  .submenu &__item > &__list {
     position: absolute;
     top: 0;
     left: 100%;
@@ -202,6 +203,7 @@ body {
 }
 
 .slider {
+  overflow: hidden;
   &__item {
     position: relative;
   }
@@ -238,10 +240,9 @@ body {
 
   .slick {
     &-arrow {
-
       position: absolute;
       top: 50%;
-      left: -100px;
+      left: -50px;
       transform: translateY(-50%);
       border: 4px solid $primary;
       border-radius: 50%;
@@ -250,8 +251,8 @@ body {
       z-index: 100;
       width: 50px;
       height: 50px;
-      margin-left: 5px;
-      transition: ease .5s;
+      // margin-left: 5px;
+      transition: ease 0.5s;
 
       img {
         width: 40px;
@@ -259,7 +260,8 @@ body {
     }
 
     &-next {
-      right: 500px;
+      left: auto;
+      right: -50px;
       margin-left: 0;
     }
 
@@ -298,19 +300,16 @@ body {
 }
 
 .slider:hover {
-
   .slick-arrow {
     display: inline-block;
-    left: 0;
+    left: 5px;
   }
 
   .slick-next {
-    visibility: visible;
     left: calc(100% - 5px);
     transform: translate(-100%, -50%);
     margin-left: 0;
   }
-
 }
 
 .promo {
@@ -358,8 +357,6 @@ body {
     background-color: $accent;
   }
 
-
-
   &__title {
     margin: 10px 0;
     font-size: 30px;
@@ -369,8 +366,6 @@ body {
     max-width: 100px;
   }
 }
-
-
 
 .footer {
   background-color: $primary;
@@ -383,7 +378,7 @@ body {
     font-size: 20px;
   }
 
-  &__menu-item+&__menu-item {
+  &__menu-item + &__menu-item {
     margin-top: 20px;
   }
 
@@ -393,22 +388,24 @@ body {
     height: 30px;
     z-index: 500;
     background-size: cover;
-    transition: ease .3s;
+    transition: ease 0.3s;
   }
 
   &__menu-icon:nth-child(1) {
-    background-image: url('../images/fb-lineal.svg');
+    background-image: url("../images/fb-lineal.svg");
   }
 
   &__menu-icon:nth-child(1):hover {
-    background-image: url('../images/fb-flat.svg');
+    background-image: url("../images/fb-flat.svg");
   }
 
   &__menu-icon:nth-child(2) {
-    background-image: url('../images/vk-lineal.svg');
+    background-image: url("../images/vk-lineal.svg");
   }
 
   &__menu-icon:nth-child(2):hover {
-    background-image: url('../images/vk-flat.svg');
+    background-image: url("../images/vk-flat.svg");
   }
 }
+
+@import "media";

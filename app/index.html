@@ -1,219 +1,266 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГУП РК "Крымтеплокоммунэнерго"</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ГУП РК "Крымтеплокоммунэнерго"</title>
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__topbar">
-      <div class="container">
-        <a class="header__hotline link" href="tel:+78005068006">Горячая линия: 8(800)506-80-06</a>
-        <input class="header__search search" type="search" />
+  <body>
+    <header class="header">
+      <div class="header__topbar">
+        <div class="container">
+          <a class="header__hotline link" href="tel:+78005068006"
+            >Горячая линия: 8(800)506-80-06</a
+          >
+          <input class="header__search search" type="text" />
+        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="header__name">
+              <p class="header__tagline">Мы приносим</p>
+              <h1 class="header__title">
+                Крым<span class="header__title header__title--red">тепло</span
+                >коммунэнерго
+              </h1>
+              <p class="header__tagline">в ваш дом</p>
+            </div>
+          </div>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link link" href="">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Потребителям</a>
+                <ul class="menu__list submenu">
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Новости</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Тарифы</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Тех. подключение</a>
+                    <ul class="menu__list submenu">
+                      <li class="menu__item">
+                        <a class="menu__link link" href="">Регламент</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Раскрытие информации</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Сотрудникам</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Личный кабинет</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="header__slider slider">
+        <div class="slider__item">
+          <img
+            class="slider__img"
+            src="images/slider-item1.png"
+            alt="slider image"
+          />
+          <div class="slider__text">
+            <h3 class="slider__title">Личный кабинет</h3>
+            <p class="slider__descr">
+              На сайте работает личный кабинет. <br />Каждый абонент может
+              проверить свой счет, сверить оплату и начисления, распечатать
+              квитанцию.
+            </p>
+            <a class="slider__link link" href="#">Перейти в личный кабинет</a>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <img
+            class="slider__img"
+            src="images/slider-item2.png"
+            alt="slider image"
+          />
+          <div class="slider__text">
+            <h3 class="slider__title">Аварийные службы</h3>
+            <p class="slider__descr">
+              В аварийную службу можно сообщить об отсутствии отопления и
+              горячей воды.
+            </p>
+            <a class="slider__link link" href="#">Посмотреть телефоны</a>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <img
+            class="slider__img"
+            src="images/slider-item3.png"
+            alt="slider image"
+          />
+          <div class="slider__text">
+            <h3 class="slider__title">Внимание абонентам</h3>
+            <p class="slider__descr">
+              ГУП РК "Крымтеплокоммунэнерго" напоминает о необходимости
+              своевременной оплаты
+            </p>
+            <a class="slider__link link" href="#">Узнать больше</a>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <img
+            class="slider__img"
+            src="images/slider-item4.png"
+            alt="slider image"
+          />
+          <!-- <div class="slider__text">
+            <h3 class="slider__title">Личный кабинет</h3>
+            <p class="slider__descr">
+              На сайте работает личный кабинет. <br />Каждый абонент может
+              проверить свой счет, сверить оплату и начисления, распечатать
+              квитанцию.
+            </p>
+            <a class="slider__link link" href="#">Перейти в личный кабинет</a>
+          </div> -->
+        </div>
+
+        <div class="slider__item">
+          <img
+            class="slider__img"
+            src="images/slider-item5.png"
+            alt="slider image"
+          />
+          <!-- <div class="slider__text">
+            <h3 class="slider__title">Личный кабинет</h3>
+            <p class="slider__descr">
+              На сайте работает личный кабинет. <br />Каждый абонент может
+              проверить свой счет, сверить оплату и начисления, распечатать
+              квитанцию.
+            </p>
+            <a class="slider__link link" href="#">Перейти в личный кабинет</a>
+          </div> -->
+        </div>
+      </div>
+    </header>
+
+    <section class="promo">
+      <div class="container">
+        <div class="promo__items">
+          <div class="promo__item">
+            <div class="promo__text">
+              <h3 class="promo__title">Тарифы</h3>
+              <a class="promo__link">Посмотреть тарифы на тепловую энергию</a>
+            </div>
+            <img
+              class="promo__icon"
+              src="images/icon-promo1.svg"
+              alt="promo icon"
+            />
+          </div>
+          <div class="promo__item">
+            <div class="promo__text">
+              <h3 class="promo__title">Контакты</h3>
+              <a class="promo__link">Посмотреть контактные телефоны и адреса</a>
+            </div>
+            <img
+              class="promo__icon"
+              src="images/icon-promo2.svg"
+              alt="promo icon"
+            />
+          </div>
+          <div class="promo__item">
+            <div class="promo__text">
+              <h3 class="promo__title">Личный кабинет</h3>
+              <a class="promo__link">Перейти в личный кабинет</a>
+            </div>
+            <img
+              class="promo__icon"
+              src="images/icon-promo3.svg"
+              alt="promo icon"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <div class="container"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
           <a class="logo" href="#">
             <img class="logo__img" src="images/logo.png" alt="logo" />
           </a>
-          <div class="header__name">
-            <p class="header__tagline">Мы приносим</p>
-            <h1 class="header__title">
-              Крым<span class="header__title header__title--red">тепло</span>коммунэнерго
-            </h1>
-            <p class="header__tagline">в ваш дом</p>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Потребителям</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href=""
+                  >Раскрытие информации</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Сотрудникам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="tel:88005068006"
+                  >8(800) 506-80-06</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a
+                  class="footer__menu-link link"
+                  href="mailto:kanc@tce.crimea.com"
+                  >kanc@tce.crimea.com</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-icon" href="#"></a>
+                <a class="footer__menu-icon" href="#"></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link link" href="">О нас</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Клиентам</a>
-              <ul class="menu__list submenu">
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Новости</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Тарифы</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Тех. подключение</a>
-                  <ul class="menu__list submenu">
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Регламент</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Раскрытие информации</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Сотрудникам</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Контакты</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Личный кабинет</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
+    </footer>
 
-    <div class="header__slider slider">
-      <div class="slider__item">
-        <img class="slider__img" src="images/slider-item1.png" alt="slider image" />
-        <div class="slider__text">
-          <h3 class="slider__title">Личный кабинет</h3>
-          <p class="slider__descr">
-            На сайте работает личный кабинет. <br />Каждый абонент может
-            проверить свой счет, сверить оплату и начисления, распечатать
-            квитанцию.
-          </p>
-          <a class="slider__link link" href="#">Перейти в личный кабинет</a>
-        </div>
-      </div>
-
-      <div class="slider__item">
-        <img class="slider__img" src="images/slider-item2.png" alt="slider image" />
-        <div class="slider__text">
-          <h3 class="slider__title">Аварийные службы</h3>
-          <p class="slider__descr">
-            В аварийную службу можно сообщить об отсутствии отопления и
-            горячей воды.
-          </p>
-          <a class="slider__link link" href="#">Посмотреть телефоны</a>
-        </div>
-      </div>
-
-      <div class="slider__item">
-        <img class="slider__img" src="images/slider-item3.png" alt="slider image" />
-        <div class="slider__text">
-          <h3 class="slider__title">Внимание абонентам</h3>
-          <p class="slider__descr">
-            ГУП РК "Крымтеплокоммунэнерго" напоминает о необходимости
-            своевременной оплаты
-          </p>
-          <a class="slider__link link" href="#">Узнать больше</a>
-        </div>
-      </div>
-
-      <div class="slider__item">
-        <img class="slider__img" src="images/slider-item4.png" alt="slider image" />
-        <!-- <div class="slider__text">
-            <h3 class="slider__title">Личный кабинет</h3>
-            <p class="slider__descr">
-              На сайте работает личный кабинет. <br />Каждый абонент может
-              проверить свой счет, сверить оплату и начисления, распечатать
-              квитанцию.
-            </p>
-            <a class="slider__link link" href="#">Перейти в личный кабинет</a>
-          </div> -->
-      </div>
-
-      <div class="slider__item">
-        <img class="slider__img" src="images/slider-item5.png" alt="slider image" />
-        <!-- <div class="slider__text">
-            <h3 class="slider__title">Личный кабинет</h3>
-            <p class="slider__descr">
-              На сайте работает личный кабинет. <br />Каждый абонент может
-              проверить свой счет, сверить оплату и начисления, распечатать
-              квитанцию.
-            </p>
-            <a class="slider__link link" href="#">Перейти в личный кабинет</a>
-          </div> -->
-      </div>
-    </div>
-  </header>
-
-  <section class="promo">
-    <div class="container">
-      <div class="promo__items">
-        <div class="promo__item">
-          <div class="promo__text">
-            <h3 class="promo__title">
-              Тарифы
-            </h3>
-            <a class="promo__link">Посмотреть тарифы на тепловую энергию</a>
-          </div>
-          <img class="promo__icon" src="images/icon-promo1.svg" alt="promo icon">
-        </div>
-        <div class="promo__item">
-          <div class="promo__text">
-            <h3 class="promo__title">
-              Контакты
-            </h3>
-            <a class="promo__link">Посмотреть контактные телефоны и адреса</a>
-          </div>
-          <img class="promo__icon" src="images/icon-promo2.svg" alt="promo icon">
-        </div>
-        <div class="promo__item">
-          <div class="promo__text">
-            <h3 class="promo__title">
-              Личный кабинет
-            </h3>
-            <a class="promo__link">Перейти в личный кабинет</a>
-          </div>
-          <img class="promo__icon" src="images/icon-promo3.svg" alt="promo icon">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="latest-news">
-    <div class="container">
-
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo" />
-        </a>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">О нас</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">Клиентам</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">Раскрытие информации</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">Сотрудникам</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">Контакты</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="">Личный кабинет</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item"><a class="footer__menu-link link" href="tel:88005068006">8(800) 506-80-06</a>
-            </li>
-            <li class="footer__menu-item"><a class="footer__menu-link link"
-                href="mailto:kanc@tce.crimea.com">kanc@tce.crimea.com</a></li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-icon" href="#"></a>
-              <a class="footer__menu-icon" href="#"></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
