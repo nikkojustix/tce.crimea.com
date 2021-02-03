@@ -9,6 +9,7 @@ const {
 const scss = require('gulp-sass');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
+const bs = require('browser-sync').create();
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
@@ -21,6 +22,18 @@ function browsersync() {
       baseDir: 'app/'
     }
   });
+}
+
+function bsdist() {
+  bs.init({
+    server: {
+      baseDir: 'dist/'
+    },
+    port: 80,
+    ui: {
+      port: 3002
+    }
+  })
 }
 
 function clean() {
@@ -107,6 +120,7 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.clean = clean;
+exports.bsdist = bsdist;
 
 exports.build = series(clean, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, browsersync, bsdist, watching);

@@ -155,8 +155,8 @@ body {
     background-color: $primary;
   }
 
-  &__item:focus-within > .submenu,
-  &__item:hover > .submenu {
+  &__item:focus-within>.submenu,
+  &__item:hover>.submenu {
     clip: auto;
     width: auto;
     height: auto;
@@ -164,7 +164,7 @@ body {
     opacity: 1;
   }
 
-  .submenu &__item > &__list {
+  .submenu &__item>&__list {
     position: absolute;
     top: 0;
     left: 100%;
@@ -195,7 +195,7 @@ body {
 }
 
 .logo {
-  flex-basis: content;
+
 
   &__img {
     width: 150px;
@@ -204,6 +204,7 @@ body {
 
 .slider {
   overflow: hidden;
+
   &__item {
     position: relative;
   }
@@ -216,7 +217,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: calc(50% - 80px);
+    width: 50%;
     padding-left: 80px;
     display: flex;
     flex-direction: column;
@@ -226,7 +227,7 @@ body {
   }
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 40px;
     line-height: 40px;
     font-weight: 700;
@@ -299,7 +300,7 @@ body {
   }
 }
 
-.slider:hover {
+.slider__inner:hover {
   .slick-arrow {
     display: inline-block;
     left: 5px;
@@ -322,55 +323,64 @@ body {
   }
 
   &__item {
-    flex-basis: 31%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    position: relative;
+    width: 31%;
+    display: block;
+    padding: 20px 110px 20px 20px;
     background-color: $light-accent;
     border-radius: 10px;
     transition: ease 0.8s;
   }
 
   &__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
-  &__text {
-    flex-basis: 55%;
-    color: $bg-color;
+  &__item::after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    display: block;
+    transform: translateY(-50%);
+    width: 90px;
   }
 
   &__item:nth-child(1) {
     background-color: $light-accent;
 
-    .promo__text {
-      color: $font-color;
+    &::after {
+      content: url('../images/icon-promo1.svg');
     }
   }
 
   &__item:nth-child(2) {
     background-color: $primary;
+    color: $bg-color;
+
+    &::after {
+      content: url('../images/icon-promo2.svg');
+    }
   }
 
   &__item:nth-child(3) {
     background-color: $accent;
+    color: $bg-color;
+
+    &::after {
+      content: url('../images/icon-promo3.svg');
+    }
   }
 
   &__title {
     margin: 10px 0;
     font-size: 30px;
   }
-
-  &__icon {
-    max-width: 100px;
-  }
 }
 
 .footer {
   background-color: $primary;
   color: $bg-color;
-  padding: 50px;
+  padding: 25px 0;
 
   &__inner {
     display: flex;
@@ -378,8 +388,13 @@ body {
     font-size: 20px;
   }
 
-  &__menu-item + &__menu-item {
+  &__menu-item+&__menu-item {
     margin-top: 20px;
+  }
+
+  &__menu-link {
+    display: inline-block;
+    padding: 5px;
   }
 
   &__menu-icon {
@@ -406,6 +421,18 @@ body {
   &__menu-icon:nth-child(2):hover {
     background-image: url("../images/vk-flat.svg");
   }
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  text-indent: -9999px;
+  background: url('../images/icon_top.png') no-repeat;
 }
 
 @import "media";
