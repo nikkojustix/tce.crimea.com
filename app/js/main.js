@@ -15,8 +15,12 @@ $(function () {
   });
 
 
+  $('.menu__item').has('ul').addClass('menu__item--has-submenu');
 
-  $(window).scrollTop(function () {
+
+
+
+  $(window).scroll(() => {
     if ($(window).scrollTop() > 50) {
       $('.scrollup').fadeIn();
     } else {

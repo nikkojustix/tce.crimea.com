@@ -155,15 +155,28 @@
       text-align: center;
     }
 
+    &__item:has(> .submenu) {
+      position: absolute;
+      content: '';
+      top: -20px;
+      width: 20px;
+      height: 20px;
+      background-color: lawngreen;
+      z-index: 99999;
+    }
+
     .submenu {
       position: relative;
     }
+
 
     .submenu &__item>&__list {
       position: relative;
       top: auto;
       left: auto;
     }
+
+
   }
 
   .promo {

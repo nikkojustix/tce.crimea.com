@@ -123,4 +123,5 @@ exports.clean = clean;
 exports.bsdist = bsdist;
 
 exports.build = series(clean, images, build);
-exports.default = parallel(styles, scripts, browsersync, bsdist, watching);
+exports.showall = parallel(styles, scripts, browsersync, bsdist, watching)
+exports.default = parallel(styles, scripts, browsersync, watching);

@@ -59,6 +59,11 @@ body {
   background-color: $bg-color;
 }
 
+.title {
+  font-family: $title-font, sans-serif;
+  font-weight: 700;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -86,6 +91,7 @@ body {
     padding: 7px 0;
     color: $accent;
     font-weight: 700;
+    font-size: 20px;
   }
 
   &__inner {
@@ -106,10 +112,8 @@ body {
   }
 
   &__title {
-    font-family: $title-font, sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 44px;
+    line-height: 44px;
     margin: 0;
   }
 
@@ -118,11 +122,15 @@ body {
   }
 
   &__tagline {
-    font-family: $title-font, sans-serif;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 40px;
+    line-height: 40px;
     color: $accent;
+  }
+
+  &__menu {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, $light-accent 0%, $primary 50%, $accent 100%);
+    border-image-slice: 1;
   }
 }
 
@@ -144,10 +152,11 @@ body {
   }
 
   &__item {
+    z-index: 9999;
     position: relative;
     display: block;
     transition: all 0.3s;
-    background-color: rgba($bg-color, 1);
+    background-color: $bg-color;
   }
 
   &__item:focus-within,
@@ -162,6 +171,10 @@ body {
     height: auto;
     margin-top: 0;
     opacity: 1;
+  }
+
+  .submenu &__item {
+    box-shadow: inset 0 0 0 1px rgba($font-color, 0.25);
   }
 
   .submenu &__item>&__list {
@@ -182,6 +195,7 @@ body {
   .submenu {
     position: absolute;
     flex-direction: column;
+
     /* display: none; */
 
     clip: rect(0 0 0 0);
@@ -195,10 +209,8 @@ body {
 }
 
 .logo {
-
-
   &__img {
-    width: 150px;
+    width: 200px;
   }
 }
 
@@ -342,7 +354,7 @@ body {
     top: 50%;
     display: block;
     transform: translateY(-50%);
-    width: 90px;
+    // width: 90px;
   }
 
   &__item:nth-child(1) {
@@ -388,6 +400,10 @@ body {
     font-size: 20px;
   }
 
+  &__logo {
+    width: 100px;
+  }
+
   &__menu-item+&__menu-item {
     margin-top: 20px;
   }
@@ -429,7 +445,7 @@ body {
   opacity: 0.3;
   position: fixed;
   bottom: 50px;
-  right: 100px;
+  right: 50px;
   display: none;
   text-indent: -9999px;
   background: url('../images/icon_top.png') no-repeat;
