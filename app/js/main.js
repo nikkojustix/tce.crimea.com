@@ -17,8 +17,15 @@ $(function () {
 
   $('.menu__item').has('ul').addClass('menu__item--has-submenu');
 
-
-
+  if ($(window).width() < 768) {
+    $('.menu__item--has-submenu').on('click', function () {
+      $('.submenu').css("clip", "auto");
+      $('.submenu').css("width", "auto");
+      $('.submenu').css("height", "auto");
+      $('.submenu').css("margin-top", "0");
+      $('.submenu').css("opacity", "1");
+    })
+  }
 
   $(window).scroll(() => {
     if ($(window).scrollTop() > 50) {

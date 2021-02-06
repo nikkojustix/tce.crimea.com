@@ -94,9 +94,21 @@
       }
     }
   }
+
+  .promo {
+    &__title {
+      font-size: 24px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
+  .header {
+    &__menu {
+      border: none;
+    }
+  }
+
   .burger {
     position: relative;
     width: 25px;

@@ -112,7 +112,7 @@ body {
   }
 
   &__title {
-    font-size: 44px;
+    font-size: 43px;
     line-height: 44px;
     margin: 0;
   }
@@ -276,6 +276,7 @@ body {
       left: auto;
       right: -50px;
       margin-left: 0;
+
     }
 
     &-dots {
@@ -336,7 +337,7 @@ body {
 
   &__item {
     position: relative;
-    width: 31%;
+    width: 32%;
     display: block;
     padding: 20px 110px 20px 20px;
     background-color: $light-accent;
@@ -350,11 +351,11 @@ body {
 
   &__item::after {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: 50%;
     display: block;
     transform: translateY(-50%);
-    // width: 90px;
+    width: 90px;
   }
 
   &__item:nth-child(1) {
