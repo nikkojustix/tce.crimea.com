@@ -19,11 +19,13 @@ $(function () {
 
   if ($(window).width() < 768) {
     $('.menu__item--has-submenu').on('click', function () {
-      $('.submenu').css("clip", "auto");
-      $('.submenu').css("width", "auto");
-      $('.submenu').css("height", "auto");
-      $('.submenu').css("margin-top", "0");
-      $('.submenu').css("opacity", "1");
+      $(this).toggleClass('menu__item--pressed');
+      $(this).children('.submenu').toggleClass('submenu--opened')
+      // $(this).children('.submenu').css("clip", "auto");
+      // $(this).children('.submenu').css("width", "auto");
+      // $(this).children('.submenu').css("height", "auto");
+      // $(this).children('.submenu').css("margin-top", "0");
+      // $(this).children('.submenu').css("opacity", "1");
     })
   }
 

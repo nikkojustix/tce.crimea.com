@@ -75,6 +75,19 @@ body {
   color: inherit;
 }
 
+.btn {
+  padding: 15px;
+  color: $bg-color;
+  background-color: $primary;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+  &:hover {
+    color: $primary;
+    background-color: transparent;
+    border: 2px solid $primary;
+  }
+}
+
 .header {
   &__topbar {
     background-color: $primary;
@@ -129,18 +142,61 @@ body {
 
   &__menu {
     border-top: 3px solid;
-    border-image: linear-gradient(to right, $light-accent 0%, $primary 50%, $accent 100%);
+    border-image: linear-gradient(
+      to right,
+      $light-accent 0%,
+      $primary 50%,
+      $accent 100%
+    );
     border-image-slice: 1;
   }
-}
 
-.search {
-  width: 250px;
-  background-color: $light-accent;
-  border: 0;
-  border-radius: 20px;
-  padding: 10px;
-  font-size: 14px;
+  &__search-form {
+    display: flex;
+  }
+
+  &__search {
+    width: 250px;
+    background-color: $light-accent;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  &__search-btn {
+    position: relative;
+    width: 30px;
+    height: 37px;
+    border: none;
+    background-color: $light-accent;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: 2px;
+    }
+
+    &::before {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 3px solid $primary;
+    }
+
+    &::after {
+      top: 23px;
+      left: 14px;
+      width: 10px;
+      height: 3px;
+      background-color: $primary;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 .menu {
@@ -164,8 +220,8 @@ body {
     background-color: $primary;
   }
 
-  &__item:focus-within>.submenu,
-  &__item:hover>.submenu {
+  &__item:focus-within > .submenu,
+  &__item:hover > .submenu {
     clip: auto;
     width: auto;
     height: auto;
@@ -177,7 +233,7 @@ body {
     box-shadow: inset 0 0 0 1px rgba($font-color, 0.25);
   }
 
-  .submenu &__item>&__list {
+  .submenu &__item > &__list {
     position: absolute;
     top: 0;
     left: 100%;
@@ -276,7 +332,6 @@ body {
       left: auto;
       right: -50px;
       margin-left: 0;
-
     }
 
     &-dots {
@@ -327,8 +382,7 @@ body {
 }
 
 .promo {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 75px;
 
   &__items {
     display: flex;
@@ -362,7 +416,7 @@ body {
     background-color: $light-accent;
 
     &::after {
-      content: url('../images/icon-promo1.svg');
+      content: url("../images/icon-promo1.svg");
     }
   }
 
@@ -371,7 +425,7 @@ body {
     color: $bg-color;
 
     &::after {
-      content: url('../images/icon-promo2.svg');
+      content: url("../images/icon-promo2.svg");
     }
   }
 
@@ -380,13 +434,88 @@ body {
     color: $bg-color;
 
     &::after {
-      content: url('../images/icon-promo3.svg');
+      content: url("../images/icon-promo3.svg");
     }
   }
 
   &__title {
     margin: 10px 0;
     font-size: 30px;
+  }
+}
+
+.news {
+  margin: 75px 0;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    padding: 15px 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  &__item {
+    height: fit-content;
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-top: 3px solid;
+    border-image: linear-gradient(
+      to right,
+      $light-accent 0%,
+      $primary 50%,
+      $accent 100%
+    );
+    border-image-slice: 1;
+    background-color: rgba($light-accent, 0.1);
+
+    &-content {
+      display: flex;
+      padding-bottom: 20px;
+    }
+
+    &-img {
+      width: 200px;
+    }
+
+    &-text {
+      margin-left: 15px;
+    }
+
+    &-title {
+      font-size: 18px;
+      line-height: 18px;
+      padding-bottom: 10px;
+    }
+
+    &-descr {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__btn {
+    display: inline-block;
   }
 }
 
@@ -405,7 +534,7 @@ body {
     width: 100px;
   }
 
-  &__menu-item+&__menu-item {
+  &__menu-item + &__menu-item {
     margin-top: 20px;
   }
 
@@ -449,7 +578,7 @@ body {
   right: 50px;
   display: none;
   text-indent: -9999px;
-  background: url('../images/icon_top.png') no-repeat;
+  background: url("../images/icon_top.png") no-repeat;
 }
 
 @import "media";
