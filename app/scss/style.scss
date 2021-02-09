@@ -67,12 +67,13 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1140px;
+  max-width: 1170px;
 }
 
 .link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .btn {
@@ -81,6 +82,7 @@ body {
   background-color: $primary;
   border: 2px solid transparent;
   transition: all 0.3s;
+
   &:hover {
     color: $primary;
     background-color: transparent;
@@ -96,6 +98,7 @@ body {
   &__topbar .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5px 15px;
   }
 
@@ -142,12 +145,10 @@ body {
 
   &__menu {
     border-top: 3px solid;
-    border-image: linear-gradient(
-      to right,
-      $light-accent 0%,
-      $primary 50%,
-      $accent 100%
-    );
+    border-image: linear-gradient(to right,
+        $light-accent 0%,
+        $primary 50%,
+        $accent 100%);
     border-image-slice: 1;
   }
 
@@ -199,6 +200,10 @@ body {
   }
 }
 
+.burger {
+  display: none;
+}
+
 .menu {
   &__list {
     display: flex;
@@ -215,13 +220,23 @@ body {
     background-color: $bg-color;
   }
 
-  &__item:focus-within,
-  &__item:hover {
+  &__item--hover {
     background-color: $primary;
   }
 
-  &__item:focus-within > .submenu,
-  &__item:hover > .submenu {
+  .submenu {
+    position: absolute;
+    flex-direction: column;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin-top: -1px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 10;
+  }
+
+  .submenu--opened {
     clip: auto;
     width: auto;
     height: auto;
@@ -233,7 +248,7 @@ body {
     box-shadow: inset 0 0 0 1px rgba($font-color, 0.25);
   }
 
-  .submenu &__item > &__list {
+  .submenu &__item>&__list {
     position: absolute;
     top: 0;
     left: 100%;
@@ -246,21 +261,6 @@ body {
     outline: none;
     font-size: 24px;
     line-height: 24px;
-  }
-
-  .submenu {
-    position: absolute;
-    flex-direction: column;
-
-    /* display: none; */
-
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin-top: -1px;
-    opacity: 0;
-    transition: all 0.3s;
-    z-index: 10;
   }
 }
 
@@ -471,15 +471,14 @@ body {
     flex-direction: column;
     padding: 10px;
     margin-bottom: 30px;
+    text-align: left;
     border-top: 3px solid;
-    border-image: linear-gradient(
-      to right,
-      $light-accent 0%,
-      $primary 50%,
-      $accent 100%
-    );
+    border-image: linear-gradient(to right,
+        $light-accent 0%,
+        $primary 50%,
+        $accent 100%);
     border-image-slice: 1;
-    background-color: rgba($light-accent, 0.1);
+    background-image: linear-gradient(to bottom, rgba($light-accent, 0.3) 0%, $bg-color 100%);
 
     &-content {
       display: flex;
@@ -514,6 +513,7 @@ body {
       align-items: flex-end;
     }
   }
+
   &__btn {
     display: inline-block;
   }
@@ -534,7 +534,7 @@ body {
     width: 100px;
   }
 
-  &__menu-item + &__menu-item {
+  &__menu-item+&__menu-item {
     margin-top: 20px;
   }
 
