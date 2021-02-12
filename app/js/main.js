@@ -12,6 +12,7 @@ $(function () {
   $('.burger').on('click', function () {
     $('.burger').toggleClass('active');
     $('.menu').toggleClass('menu--active');
+    $('.page').toggleClass('page--disable')
   });
 
 
@@ -28,8 +29,8 @@ $(function () {
     });
   } else {
     $('.menu__item--has-submenu').children('.menu__link').on('click', function () {
-      $(this).toggleClass('menu__item--pressed');
-      $(this).siblings('.submenu').toggleClass('submenu--opened');
+      $(this).toggleClass('menu__link--pressed');
+      $(this).siblings('.submenu').toggleClass('submenu--opened').ti;
     });
   }
 

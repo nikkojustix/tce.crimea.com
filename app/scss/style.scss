@@ -51,12 +51,16 @@ li {
   list-style: none;
 }
 
-body {
+.page {
   font-family: $main-font, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $font-color;
   background-color: $bg-color;
+
+  &--disable {
+    overflow: hidden;
+  }
 }
 
 .title {
@@ -242,6 +246,7 @@ body {
     height: auto;
     margin-top: 0;
     opacity: 1;
+    transition: all 0.5s;
   }
 
   .submenu &__item {
@@ -452,7 +457,6 @@ body {
   }
 
   &__title {
-    padding: 15px 0;
     font-size: 28px;
     line-height: 28px;
   }
