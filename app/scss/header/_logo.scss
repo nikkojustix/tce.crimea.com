@@ -1,0 +1,29 @@
+.logo {
+  &__img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    &__img {
+      width: 175px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    &__img {
+      width: 125px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    &__img {
+      margin-bottom: 15px;
+    }
+  }
+}

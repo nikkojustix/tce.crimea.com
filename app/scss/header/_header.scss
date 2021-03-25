@@ -1,0 +1,171 @@
+.header {
+  &__topbar {
+    background-color: $primary;
+  }
+
+  &__topbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+  }
+
+  &__hotline {
+    display: inline-block;
+    padding: 7px 0;
+    color: $accent;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  &__search-form {
+    display: flex;
+  }
+
+  &__search {
+    width: 250px;
+    background-color: $light-accent;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  &__search-btn {
+    position: relative;
+    width: 30px;
+    height: 37px;
+    border: none;
+    background-color: $light-accent;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left: 2px;
+    }
+
+    &::before {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 3px solid $primary;
+    }
+
+    &::after {
+      top: 23px;
+      left: 14px;
+      width: 10px;
+      height: 3px;
+      background-color: $primary;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__inner {
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__name {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    font-size: 43px;
+    line-height: 44px;
+    margin: 0;
+  }
+
+  &__title--red {
+    color: $accent;
+  }
+
+  &__tagline {
+    font-size: 40px;
+    line-height: 40px;
+    color: $accent;
+  }
+
+  &__menu {
+    border-top: 3px solid;
+    border-image: linear-gradient(to right,
+        $light-accent 0%,
+        $primary 50%,
+        $accent 100%);
+    border-image-slice: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__title {
+      font-size: 34px;
+      line-height: 38px;
+    }
+
+    &__tagline {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__menu {
+      border: none;
+    }
+
+    &__search-form {
+      display: none;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 32px;
+    }
+
+    &__tagline {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    &__logo {
+      flex-direction: column;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 18px;
+    }
+
+    &__tagline {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &__hotline {
+      width: 150px;
+    }
+  }
+}

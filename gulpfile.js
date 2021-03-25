@@ -8,32 +8,22 @@ const {
 
 const scss = require('gulp-sass');
 const concat = require('gulp-concat');
-const browserSync = require('browser-sync').create();
-const bs = require('browser-sync').create();
+const browserSync = require('browser-sync').create("local");
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
-
 function browsersync() {
   browserSync.init({
     server: {
       baseDir: 'app/'
+    },
+    port: 5545,
+    ui: {
+      port: 2002
     }
   });
-}
-
-function bsdist() {
-  bs.init({
-    server: {
-      baseDir: 'dist/'
-    },
-    port: 80,
-    ui: {
-      port: 3002
-    }
-  })
 }
 
 function clean() {
@@ -109,7 +99,7 @@ function build() {
 }
 
 function watching() {
-  watch(['app/scss/style.scss'], styles);
+  watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/*.html']).on('change', browserSync.reload);
 }
@@ -120,8 +110,6 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.clean = clean;
-exports.bsdist = bsdist;
 
 exports.build = series(clean, images, build);
-exports.showall = parallel(styles, scripts, browsersync, bsdist, watching)
 exports.default = parallel(styles, scripts, browsersync, watching);

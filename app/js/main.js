@@ -10,9 +10,9 @@ $(function () {
   });
 
   $('.burger').on('click', function () {
-    $('.burger').toggleClass('active');
+    $('.burger__btn').toggleClass('burger__btn--active');
     $('.menu').toggleClass('menu--active');
-    $('.page').toggleClass('page--disable')
+    $('.body').toggleClass('body--disable')
   });
 
 
@@ -48,4 +48,6 @@ $(function () {
     }, 600);
     return false;
   });
+
+  $('.this-year').text((new Date).getFullYear());
 });

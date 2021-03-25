@@ -1,0 +1,50 @@
+.breadcrumbs {
+  position: relative;
+  grid-column: 1 / span 2;
+  width: 100%;
+  display: flex;
+  background-color: $primary;
+  font-size: 14px;
+
+
+  &__item {
+    position: relative;
+    padding: 10px;
+    color: $white;
+
+    &--current {
+      color: rgba($white, 0.8);
+    }
+
+    &:not(:last-child)::after {
+      position: absolute;
+      content: '';
+      background-image: url(../../images/breadcrumbs-sep.svg);
+      width: 16px;
+      height: 100%;
+      right: -7px;
+      top: 0;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: -6px;
+    content: '';
+    width: 10px;
+    height: 48px;
+    background-color: $primary;
+    border-radius: 4px;
+  }
+
+  &::before {
+    left: -12px;
+  }
+
+  &::after {
+    right: -12px;
+  }
+
+
+}
