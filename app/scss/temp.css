@@ -1,103 +1,21 @@
-  $('.contacts__item--active .contacts__content').slideDown();
+/* активный переключатель, положение вверх */
+.contacts__item--active .contacts__title:before {
+  border: 2px solid #fefcfe;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  top: 18px;
+}
 
-  $('.contacts__title').on('click', function () {
-      $('.contacts__content').not($(this).next()).slideUp();
-      $('.contacts__item').not($(this).parent()).removeClass('contacts__item--active');
-      $(this).next().slideToggle().parent().toggleClass('contacts__item--active');
-    }
+/* заголовок активного блока  */
+.contacts__item--active .contacts__title {
+  background: #e7b350;
+  color: #fefcfe;
+}
 
-  );
-
-  .latest-news {
-    text-align: center;
-  }
-
-  .latest-news__title {
-    font-size: 22px;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .latest-news__items {
-    margin-bottom: 20px;
-  }
-
-  .latest-news__item {
-    padding: 10px 5px;
-    text-align: left;
-    border-bottom: 1px solid #e2a42c;
-  }
-
-  .latest-news__item-title {
-    font-size: 16px;
-  }
-
-  .latest-news__btn {
-    display: inline-block;
-  }
-
-  .contacts {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 40px;
-  }
-
-  .contacts__item {
-    margin-bottom: 1px;
-    position: relative;
-    margin-bottom: 10px;
-  }
-
-  /* заголовки панелей аккордеона */
-  .contacts__title {
-    font-weight: 700;
-    font-size: 24px;
-    color: #f5f5f5;
-    cursor: pointer;
-    background: #e2a42c;
-    padding: 10px 55px 10px 15px;
-    transition: all .3s;
-    text-transform: uppercase;
-    border-radius: 10px;
-  }
-
-  /* переключатель панелей, положение вниз */
-  .contacts__title::before {
-    content: '';
-    height: 8px;
-    width: 8px;
-    display: block;
-    border: 2px solid #f5f5f5;
-    border-right-width: 0;
-    border-top-width: 0;
-    transform: rotate(-45deg);
-    position: absolute;
-    right: 20px;
-    top: 18px;
-  }
-
-  /* активный переключатель, положение вверх */
-  .contacts__item--active .contacts__title:before {
-    border: 2px solid #fefcfe;
-    border-left-width: 0;
-    border-bottom-width: 0;
-    top: 18px;
-  }
-
-  .contacts__title:hover {
-    background: #e7b350;
-  }
-
-  /* заголовок активного блока  */
-  .contacts__item--active .contacts__title {
-    background: #e7b350;
-    color: #fefcfe
-  }
-
-  /* контент */
-  .contacts__content {
-    display: none;
-    padding: 10px 15px;
-    overflow: hidden;
-    background: #f7f8f7
-  }
+/* контент */
+.contacts__content {
+  display: none;
+  padding: 10px 15px;
+  overflow: hidden;
+  background: #f7f8f7;
+}

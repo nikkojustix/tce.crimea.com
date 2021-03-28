@@ -1,271 +1,300 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГУП РК "Крымтеплокоммунэнерго" v0.9</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ГУП РК "Крымтеплокоммунэнерго" v0.9</title>
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
+  <body class="body">
+    <header class="header">
+      <div class="header__topbar">
+        <div class="container">
+          <div class="burger">
+            <span class="burger__btn"></span>
+          </div>
+          <a class="header__hotline link" href="tel:+78005068006"
+            >Горячая линия: 8(800)506-80-06</a
+          >
 
-<body class="body">
-  <header class="header">
-    <div class="header__topbar">
+          <form class="header__search-form" action="search">
+            <input class="header__search" type="text" />
+            <button class="header__search-btn" type="submit"></button>
+          </form>
+        </div>
+      </div>
       <div class="container">
-        <div class="burger">
-          <span class="burger__btn"></span>
-        </div>
-        <a class="header__hotline link" href="tel:+78005068006">Горячая линия: 8(800)506-80-06</a>
-
-        <form class="header__search-form" action="search">
-          <input class="header__search" type="text" />
-          <button class="header__search-btn" type="submit"></button>
-        </form>
-      </div>
-    </div>
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__logo">
-          <a class="logo" href="/">
-            <img class="logo__img" src="images/logo.png" alt="logo" />
-          </a>
-          <div class="header__name">
-            <p class="header__tagline title">Мы приносим</p>
-            <h1 class="header__title title">
-              Крым<span class="header__title header__title--red title">тепло</span>коммунэнерго
-            </h1>
-            <p class="header__tagline title">в ваш дом</p>
+        <div class="header__inner">
+          <div class="header__logo">
+            <a class="logo" href="/">
+              <img class="logo__img" src="images/logo.png" alt="logo" />
+            </a>
+            <div class="header__name">
+              <p class="header__tagline title">Мы приносим</p>
+              <h1 class="header__title title">
+                Крым<span class="header__title header__title--red title"
+                  >тепло</span
+                >коммунэнерго
+              </h1>
+              <p class="header__tagline title">в ваш дом</p>
+            </div>
           </div>
+
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link link">О нас</a>
+                <ul class="menu__list submenu">
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">История предприятия</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Руководство</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Структура</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link">Потребителям</a>
+                <ul class="menu__list submenu">
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Личный кабинет</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Новости</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Тарифы</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link">Тех. подключение</a>
+                    <ul class="menu__list submenu">
+                      <li class="menu__item">
+                        <a class="menu__link link" href=""
+                          >Порядок подключения</a
+                        >
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link link" href="">Подать заявку</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Вопрос - Ответ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Отключения</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Передать показания</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Оплата услуг</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link">Раскрытие информации</a>
+                <ul class="menu__list submenu">
+                  <li class="menu__item">
+                    <a class="menu__link link">Закупки</a>
+                    <ul class="menu__list submenu">
+                      <li class="menu__item">
+                        <a class="menu__link link" href=""
+                          >Положение о закупках 223-ФЗ</a
+                        >
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link link" href=""
+                          >План закупок 223-ФЗ</a
+                        >
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link link" href="">План-график 44-ФЗ</a>
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link link" href=""
+                          >Закупки 223-ФЗ и 44-ФЗ</a
+                        >
+                      </li>
+                      <li class="menu__item">
+                        <a class="menu__link link" href=""
+                          >Отчеты по заключенным договорам 223-ФЗ</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Бухгалтерский баланс</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Охрана труда</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link link" href="">Тех.присоединение</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Сотрудникам</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="/contacts.html">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link link" href="">Партнерам</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link link">О нас</a>
-              <ul class="menu__list submenu">
-                <li class="menu__item">
-                  <a class="menu__link link" href="">История предприятия</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Руководство</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Структура</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link">Потребителям</a>
-              <ul class="menu__list submenu">
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Личный кабинет</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Новости</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Тарифы</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link">Тех. подключение</a>
-                  <ul class="menu__list submenu">
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Порядок подключения</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Подать заявку</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Вопрос - Ответ</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Отключения</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Передать показания</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Оплата услуг</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link">Раскрытие информации</a>
-              <ul class="menu__list submenu">
-                <li class="menu__item">
-                  <a class="menu__link link">Закупки</a>
-                  <ul class="menu__list submenu">
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Положение о закупках 223-ФЗ</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">План закупок 223-ФЗ</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">План-график 44-ФЗ</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Закупки 223-ФЗ и 44-ФЗ</a>
-                    </li>
-                    <li class="menu__item">
-                      <a class="menu__link link" href="">Отчеты по заключенным договорам 223-ФЗ</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Бухгалтерский баланс</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Охрана труда</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link link" href="">Тех.присоединение</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Сотрудникам</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="/contacts.html">Контакты</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link link" href="">Партнерам</a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main">
-    <div class="container container--with-sidebar">
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="" class="breadcrumbs__link link">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="" class="breadcrumbs__link link">Новости</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--current">
-          Торжественное собрание в честь юбилея ГУП РК
-          "Крымтеплокоммунэнерго"
-      </ul>
-      <article class="post">
-        <section class="post__inner">
-          <h1 class="post__title title">
+    <main class="main">
+      <div class="container container--with-sidebar">
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link link">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="" class="breadcrumbs__link link">Новости</a>
+          </li>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
             Торжественное собрание в честь юбилея ГУП РК "Крымтеплокоммунэнерго"
-          </h1>
-          <div class="post__content">
-            <p>В мероприятии приняли участие ветераны труда, заместитель
-              Председателя Совета министров Республики Крым Светлана
-              Маслова, Председатель Комитета Государственного Совета
-              республики по жилищной политике и жилищно-коммунальному
-              хозяйству Алексей Гусев, временно исполняющий обязанности
-              министра жилищно-коммунального хозяйства Республики Крым
-              Сергей Донец, заместитель министра жилищно-коммунального
-              хозяйства Республики Крым Исмет Аблаев, глава администрации
-              города Симферополя Елена Проценко, председатель
-              Симферопольского городского совета Виктор Агеев,
-              представитель КРО общероссийского профсоюза работников
-              жизнеобеспечения, председатель молодёжного совета профсоюзов
-              Валентина Мигелёва, генеральный директор ГУП РК «Вода Крыма»
-              Владимир Баженов, представитель ГУП РК «Крымэнерго» Игорь
-              Дворный и сотрудники предприятия. Открывая мероприятие,
-              сотрудники предприятия исполнили его гимн, написанный
-              оператором теплового пункта А.Н.Жировым. Заместитель
-              Председателя Совета министров Республики Крым Светлана
-              Маслова зачитала приветственный адрес Главы Республики Крым
-              Сергея Аксёнова, в котором отмечается, что предприятие и
-              весь коллектив добросовестно выполняет свою основную задачу
-              по обеспечению теплом и горячим водоснабжением потребителей
-              Республики Крым. Кроме того, вице-премьер наградила
-              благодарностью Главы Республики Крым генерального директора
-              предприятия Виктора Дойчева за добросовестный труд и высокий
-              профессионализм при выполнении задач гражданской обороны.
-              Помимо поздравлений в адрес предприятия-юбиляра,
-              приглашенные гости также выразили искренние слова
-              благодарности за весомый вклад в его становление и развитие,
-              самоотверженный труд и профессионализм ветеранам отрасли.</p>
-          </div>
-        </section>
-      </article>
-      <aside class="sidebar">
-        <section class="sidebar__news latest-news">
-          <h4 class="latest-news__title title">Свежие новости</h4>
-          <div class="latest-news__items">
-            <div class="latest-news__item">
-              <a class="latest-news__item-link link" href="">
-                <h5 class="latest-news__item-title">
-                  Торжественное собрание в честь юбилея ГУП РК
-                  "Крымтеплокоммунэнерго"
-                </h5>
-              </a>
+          </li>
+        </ul>
+
+        <article class="post">
+          <section class="post__inner">
+            <h1 class="post__title title">
+              Торжественное собрание в честь юбилея ГУП РК
+              "Крымтеплокоммунэнерго"
+            </h1>
+            <div class="post__content">
+              <p>
+                В мероприятии приняли участие ветераны труда, заместитель
+                Председателя Совета министров Республики Крым Светлана Маслова,
+                Председатель Комитета Государственного Совета республики по
+                жилищной политике и жилищно-коммунальному хозяйству Алексей
+                Гусев, временно исполняющий обязанности министра
+                жилищно-коммунального хозяйства Республики Крым Сергей Донец,
+                заместитель министра жилищно-коммунального хозяйства Республики
+                Крым Исмет Аблаев, глава администрации города Симферополя Елена
+                Проценко, председатель Симферопольского городского совета Виктор
+                Агеев, представитель КРО общероссийского профсоюза работников
+                жизнеобеспечения, председатель молодёжного совета профсоюзов
+                Валентина Мигелёва, генеральный директор ГУП РК «Вода Крыма»
+                Владимир Баженов, представитель ГУП РК «Крымэнерго» Игорь
+                Дворный и сотрудники предприятия. Открывая мероприятие,
+                сотрудники предприятия исполнили его гимн, написанный оператором
+                теплового пункта А.Н.Жировым. Заместитель Председателя Совета
+                министров Республики Крым Светлана Маслова зачитала
+                приветственный адрес Главы Республики Крым Сергея Аксёнова, в
+                котором отмечается, что предприятие и весь коллектив
+                добросовестно выполняет свою основную задачу по обеспечению
+                теплом и горячим водоснабжением потребителей Республики Крым.
+                Кроме того, вице-премьер наградила благодарностью Главы
+                Республики Крым генерального директора предприятия Виктора
+                Дойчева за добросовестный труд и высокий профессионализм при
+                выполнении задач гражданской обороны. Помимо поздравлений в
+                адрес предприятия-юбиляра, приглашенные гости также выразили
+                искренние слова благодарности за весомый вклад в его становление
+                и развитие, самоотверженный труд и профессионализм ветеранам
+                отрасли.
+              </p>
+            </div>
+          </section>
+        </article>
+        <aside class="sidebar">
+          <section class="sidebar__news latest-news">
+            <h4 class="latest-news__title title">Свежие новости</h4>
+            <div class="latest-news__items">
+              <div class="latest-news__item">
+                <a class="latest-news__item-link link" href="">
+                  <h5 class="latest-news__item-title">
+                    Торжественное собрание в честь юбилея ГУП РК
+                    "Крымтеплокоммунэнерго"
+                  </h5>
+                </a>
+              </div>
             </div>
             <a class="latest-news__btn btn link" href="">Все новости</a>
-        </section>
-      </aside>
-    </div>
-  </main>
-
-
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a class="logo" href="/">
-          <img class="logo__img footer__logo" src="images/logo.png" alt="logo" />
-        </a>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">О нас</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">Потребителям</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">Раскрытие информации</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">Сотрудникам</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">Контакты</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="">Личный кабинет</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="tel:88005068006">8(800) 506-80-06</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link link" href="mailto:kanc@tce.crimea.com">kanc@tce.crimea.com</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-icon" href="#"></a>
-              <a class="footer__menu-icon" href="#"></a>
-            </li>
-          </ul>
-        </div>
+          </section>
+        </aside>
       </div>
-      <p class="footer__copy">&copy; 2014 - <span class="this-year"></span> ГУП РК "Крымтеплокоммунэнерго"</p>
-    </div>
-  </footer>
+    </main>
 
-  <a href="#" class="scrollup"></a>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a class="logo" href="/">
+            <img
+              class="logo__img footer__logo"
+              src="images/logo.png"
+              alt="logo"
+            />
+          </a>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Потребителям</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href=""
+                  >Раскрытие информации</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Сотрудникам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link link" href="tel:88005068006"
+                  >8(800) 506-80-06</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a
+                  class="footer__menu-link link"
+                  href="mailto:kanc@tce.crimea.com"
+                  >kanc@tce.crimea.com</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-icon" href="#"></a>
+                <a class="footer__menu-icon" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copy">
+          &copy; 2014 - <span class="this-year"></span> ГУП РК
+          "Крымтеплокоммунэнерго"
+        </p>
+      </div>
+    </footer>
 
-  <script src="js/main.min.js"></script>
-</body>
+    <a href="#" class="scrollup"></a>
 
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

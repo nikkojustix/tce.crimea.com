@@ -82,26 +82,27 @@ li {
   }
 }
 
-@import 'components/title';
-@import 'components/link';
-@import 'components/btn';
-@import 'components/breadcrumbs';
+@import "components/title";
+@import "components/link";
+@import "components/btn";
+@import "components/breadcrumbs";
 
-@import 'header/header';
-@import 'header/burger';
-@import 'header/menu';
-@import 'header/logo';
+@import "header/header";
+@import "header/burger";
+@import "header/menu";
+@import "header/logo";
 
+@import "slider/slider";
 
-@import 'slider/slider';
+@import "promo/promo";
 
-@import 'promo/promo';
+@import "news/news";
 
-@import 'news/news';
+@import "contacts/contacts";
+@import "single/single";
+@import "sidebar/sidebar";
+@import "sidebar/latest-news";
 
-@import 'single/single';
-@import 'sidebar/sidebar';
+@import "footer/footer";
 
-@import 'footer/footer';
-
-@import 'components/scrollup';
+@import "components/scrollup";

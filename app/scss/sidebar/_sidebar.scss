@@ -1,1 +1,5 @@
-.sidebar {}
+.sidebar {
+  &__news {
+    margin: 10px 0;
+  }
+}
