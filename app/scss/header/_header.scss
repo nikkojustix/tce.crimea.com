@@ -151,13 +151,27 @@
     }
 
     &__title {
-      font-size: 18px;
-      line-height: 18px;
+      font-size: 28px;
+      line-height: 28px;
     }
 
     &__tagline {
-      font-size: 16px;
-      line-height: 16px;
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__tagline {
+      font-size: 22px;
+      line-height: 22px;
     }
   }
 }
@@ -166,6 +180,16 @@
   .header {
     &__hotline {
       width: 150px;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__tagline {
+      font-size: 18px;
+      line-height: 18px;
     }
   }
 }

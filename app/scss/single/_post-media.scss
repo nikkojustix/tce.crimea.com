@@ -1,0 +1,15 @@
+.post-media {
+  &__full {}
+
+  &__thumbs {
+
+    background-color: #ccc;
+
+    &-img {
+      width: auto !important;
+      height: 100px;
+      margin: 10px;
+    }
+  }
+
+}

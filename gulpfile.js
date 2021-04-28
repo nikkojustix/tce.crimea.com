@@ -59,11 +59,11 @@ function images() {
 function scripts() {
   return src([
       'node_modules/jquery/dist/jquery.js',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
       'node_modules/slick-carousel/slick/slick.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
@@ -71,13 +71,14 @@ function scripts() {
 function styles() {
   return src([
       'node_modules/normalize.css/normalize.css',
+      'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
       'node_modules/slick-carousel/slick/slick.css',
       'app/scss/style.scss'
     ])
     .pipe(scss({
-      outputStyle: 'compressed'
-    }))
-    .pipe(concat('style.min.css'))
+      outputStyle: 'nested'
+    }).on('error', scss.logError))
+    .pipe(concat('style.css'))
     .pipe(autoprefixer({
       overrideBrowserlist: ['last 10 versions'],
       grid: true
@@ -88,7 +89,7 @@ function styles() {
 
 function build() {
   return src([
-      'app/css/style.min.css',
+      'app/css/style.css',
       'app/fonts/**/*',
       'app/js/main.min.js',
       'app/*.html'

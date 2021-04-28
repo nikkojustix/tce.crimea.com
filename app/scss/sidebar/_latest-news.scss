@@ -25,3 +25,11 @@
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .latest-news {
+    &__btn {
+      display: inline-block;
+    }
+  }
+}

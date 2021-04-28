@@ -12,6 +12,7 @@
     display: block;
     transition: all 0.3s;
     background-color: $white;
+    flex-grow: 1;
   }
 
   &__item--hover {

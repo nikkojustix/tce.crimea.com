@@ -1,40 +1,6 @@
 @import "vars";
 @import "fonts";
 
-// .element {
-//   /* Позиционирование */
-//   position: relative;
-//   left: 0;
-//   right: 0;
-//   top: 0;
-//   bottom: 0;
-
-//   /* Блочная модель */
-//   display: flex;
-//   align-items: center;
-//   margin: 10px;
-//   padding: 10px 20px;
-//   border: 1px solid red;
-//   width: 200px;
-//   height: 100px;
-//   box-sizing: border-box;
-
-//   /* Типографика */
-//   font-family: Arial;
-//   font-size: 25px;
-//   font-style: italic;
-//   text-decoration: none;
-//   color: red;
-
-//   /* Оформление */
-//   background: red;
-//   opacity: 1;
-
-//   /* Анимации */
-//   transform: translateX(5px);
-//   animation: shake 0.3s infinite;
-// }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,24 +13,32 @@
   }
 }
 
+img {
+  display: block;
+}
+
 ul,
 li {
   list-style: none;
 }
 
-.body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
-  min-height: 100vh;
+body {
   font-family: $main-font, sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: $font-color;
   background-color: $white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 
   &--disable {
     overflow: hidden;
+    max-height: 100vh;
   }
 }
 
@@ -72,13 +46,20 @@ li {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1170px;
+}
 
-  &--with-sidebar {
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: 3fr 1fr;
-    row-gap: 20px;
-    column-gap: 40px;
+.main {
+  &__inner {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__inner {
+    flex-direction: column;
+
   }
 }
 
@@ -100,6 +81,7 @@ li {
 
 @import "contacts/contacts";
 @import "single/single";
+@import 'single/post-media';
 @import "sidebar/sidebar";
 @import "sidebar/latest-news";
 
