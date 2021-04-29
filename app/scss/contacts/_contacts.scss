@@ -1,12 +1,11 @@
 .contacts {
   width: 100%;
-  max-width: 800px;
   margin-bottom: 40px;
 
   &__item {
     margin-bottom: 1px;
-    position: relative;
     margin-bottom: 10px;
+    border: 2px solid $primary;
   }
 
   &__title {
@@ -17,34 +16,47 @@
     background: $primary;
     padding: 10px 55px 10px 15px;
     transition: all 0.3s;
+    position: relative;
     // text-transform: uppercase;
     // border-radius: 10px;
 
-    &::before {
-      content: "";
-      height: 8px;
-      width: 8px;
-      display: block;
-      border: 2px solid $white;
-      border-right-width: 0;
-      border-top-width: 0;
-      transform: rotate(-45deg);
+    &::before,
+    &::after {
       position: absolute;
+      content: "";
+      top: 50%;
+      height: 2px;
+      width: 8px;
+      background-color: $white;
+      transition: all 0.3s;
+    }
+
+    &::before {
+      right: 25px;
+      transform: translateY(-50%) rotate(45deg);
+    }
+
+    &::after {
       right: 20px;
-      top: 18px;
+      transform: translateY(-50%) rotate(-45deg);
     }
 
     &:hover {
-      background-color: $light-accent;
+      background-color: transparent;
+      color: $primary;
+
+      &::before,
+      &::after {
+        background-color: $primary;
+      }
     }
 
     &--active {
-      background-color: $light-accent;
-
       &::before {
-        border: 2px solid $white;
-        border-left-width: 0;
-        border-bottom-width: 0;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+      &::after {
+        transform: translateY(-50%) rotate(45deg);
       }
     }
   }
@@ -53,5 +65,6 @@
     display: none;
     padding: 10px 15px;
     overflow: hidden;
+    border-top: 0;
   }
 }

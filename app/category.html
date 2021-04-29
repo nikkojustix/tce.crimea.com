@@ -1,424 +1,485 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ГУП РК "Крымтеплокоммунэнерго" v0.9</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ГУП РК "Крымтеплокоммунэнерго" v0.9</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__topbar">
+          <div class="container">
+            <div class="burger">
+              <span class="burger__btn"></span>
+            </div>
+            <a class="header__hotline link" href="tel:+78005068006"
+              >Горячая линия: 8(800)506-80-06</a
+            >
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__topbar">
+            <form class="header__search-form" action="search">
+              <input class="header__search" type="text" />
+              <button class="header__search-btn" type="submit"></button>
+            </form>
+          </div>
+        </div>
         <div class="container">
-          <div class="burger">
-            <span class="burger__btn"></span>
-          </div>
-          <a class="header__hotline link" href="tel:+78005068006">Горячая линия: 8(800)506-80-06</a>
-
-          <form class="header__search-form" action="search">
-            <input class="header__search" type="text" />
-            <button class="header__search-btn" type="submit"></button>
-          </form>
-        </div>
-      </div>
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__logo">
-            <a class="logo" href="/">
-              <img class="logo__img" src="images/logo.png" alt="logo" />
-            </a>
-            <div class="header__name">
-              <p class="header__tagline title">Мы приносим</p>
-              <h1 class="header__title title">
-                Крым<span class="header__title header__title--red title">тепло</span>коммунэнерго
-              </h1>
-              <p class="header__tagline title">в ваш дом</p>
-            </div>
-          </div>
-
-          <nav class="header__menu menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link link">О нас</a>
-                <ul class="menu__list submenu">
-                  <li class="menu__item">
-                    <a class="menu__link link" href="#">История предприятия</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Руководство</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Структура</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link">Потребителям</a>
-                <ul class="menu__list submenu">
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Личный кабинет</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Новости</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Тарифы</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link">Тех. подключение</a>
-                    <ul class="menu__list submenu">
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">Порядок подключения</a>
-                      </li>
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">Подать заявку</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Вопрос - Ответ</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Отключения</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Передать показания</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Оплата услуг</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link">Раскрытие информации</a>
-                <ul class="menu__list submenu">
-                  <li class="menu__item">
-                    <a class="menu__link link">Закупки</a>
-                    <ul class="menu__list submenu">
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">Положение о закупках 223-ФЗ</a>
-                      </li>
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">План закупок 223-ФЗ</a>
-                      </li>
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">План-график 44-ФЗ</a>
-                      </li>
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">Закупки 223-ФЗ и 44-ФЗ</a>
-                      </li>
-                      <li class="menu__item">
-                        <a class="menu__link link" href="">Отчеты по заключенным договорам 223-ФЗ</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Бухгалтерский баланс</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Охрана труда</a>
-                  </li>
-                  <li class="menu__item">
-                    <a class="menu__link link" href="">Тех.присоединение</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="">Сотрудникам</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="">Партнеры</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="/contacts.html">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs__item">
-            <a href="" class="breadcrumbs__link link">Главная</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a href="" class="breadcrumbs__link link">Новости</a>
-          </li>
-        </ul>
-        <div class="main__inner">
-          <section class="category">
-            <h1 class="gategory__title title">
-              Торжественное собрание в честь юбилея ГУП РК
-              "Крымтеплокоммунэнерго"
-            </h1>
-            <div class="news__items">
-              <div class="news__item">
-                <div class="news__item-content">
-                  <a class="news__item-link" href="single.html"><img class="news__item-img" src="images/news-item1.jpg"
-                      alt="50 лет КТКЭ" />
-                  </a>
-                  <div class="news__item-text">
-                    <a class="news__item-link link" href="single.html">
-                      <h4 class="news__item-title">
-                        Торжественное собрание в честь юбилея ГУП РК
-                        "Крымтеплокоммунэнерго"
-                      </h4>
-                    </a>
-                    <p class="news__item-descr">
-                      В мероприятии приняли участие ветераны труда, заместитель
-                      Председателя Совета министров Республики Крым Светлана
-                      Маслова, Председатель Комитета Государственного Совета
-                      республики по жилищной политике и жилищно-коммунальному
-                      хозяйству Алексей Гусев, временно исполняющий обязанности
-                      министра жилищно-коммунального хозяйства Республики Крым
-                      Сергей Донец, заместитель министра жилищно-коммунального
-                      хозяйства Республики Крым Исмет Аблаев, глава
-                      администрации города Симферополя Елена Проценко,
-                      председатель Симферопольского городского совета Виктор
-                      Агеев, представитель КРО общероссийского профсоюза
-                      работников жизнеобеспечения, председатель молодёжного
-                      совета профсоюзов Валентина Мигелёва, генеральный директор
-                      ГУП РК «Вода Крыма» Владимир Баженов, представитель ГУП РК
-                      «Крымэнерго» Игорь Дворный и сотрудники предприятия.
-                      Открывая мероприятие, сотрудники предприятия исполнили его
-                      гимн, написанный оператором теплового пункта А.Н.Жировым.
-                      Заместитель Председателя Совета министров Республики Крым
-                      Светлана Маслова зачитала приветственный адрес Главы
-                      Республики Крым Сергея Аксёнова, в котором отмечается, что
-                      предприятие и весь коллектив добросовестно выполняет свою
-                      основную задачу по обеспечению теплом и горячим
-                      водоснабжением потребителей Республики Крым. Кроме того,
-                      вице-премьер наградила благодарностью Главы Республики
-                      Крым генерального директора предприятия Виктора Дойчева за
-                      добросовестный труд и высокий профессионализм при
-                      выполнении задач гражданской обороны. Помимо поздравлений
-                      в адрес предприятия-юбиляра, приглашенные гости также
-                      выразили искренние слова благодарности за весомый вклад в
-                      его становление и развитие, самоотверженный труд и
-                      профессионализм ветеранам отрасли.
-                    </p>
-                  </div>
-                </div>
-                <div class="news__item-footer">
-                  <date class="news__item-date">07.02.2021</date>
-                  <a class="news__item-readmore btn link" href="single.html">Читать далее</a>
-                </div>
-              </div>
-              <div class="news__item">
-                <div class="news__item-content">
-                  <a class="news__item-link" href=""><img class="news__item-img" src="images/news-item2.jpg"
-                      alt="50 лет КТКЭ" />
-                  </a>
-                  <div class="news__item-text">
-                    <a class="news__item-link link" href="">
-                      <h4 class="news__item-title">
-                        14 едениц новой спецтехники
-                      </h4>
-                    </a>
-                    <p class="news__item-descr">
-                      В соответствии с Постановлением СМ РК № 104 от 05.03.2018
-                      г. подписано Соглашение между Министерством ЖКХ Республики
-                      Крым и ГУП РК «Крымтеплокоммунэнерго» «О предоставлении из
-                      бюджета Республики Крым субсидии юридическим лицам, на
-                      финансовое обеспечение мероприятий в рамках
-                      Государственной программы реформирования
-                      жилищно-коммунального хозяйства РК» Предприятием закуплена
-                      специализированная техника в количестве -14 единиц на
-                      сумму-76мил. 371 тыс.руб.. что позволит обновить автопарк
-                      на 26%. Экскаватор-погрузчик с глубинным копанием 5,7м.
-                      Имеющаяся на балансе ГУП РК «КТКЭ» техника не справляется
-                      в полном объеме с поставленными задачами, а именно
-                      проведение земляных работ повышенной сложности, такие как
-                      планировка территории, разработка и погрузка грунта, рытье
-                      котлованов и траншей. Два крана-манипулятора оснащенные
-                      сертифицированной люлькой, высотой до 22м. Позволит
-                      производить высотные работы на труднодоступных участках и
-                      одновременно производить погрузочно-разгрузочные работы.
-                      Что позволит сэкономить количество используемой техники на
-                      любом участке работ. Одна автоцистерна для транспортировки
-                      нефтепродуктов. Данный автомобиль необходим предприятию
-                      для осуществления перевозок нефтепродуктов, как светлых
-                      так и темных, необходимых для бесперебойной
-                      работоспособности котельных ГУП РК «Крымтеплокоммунэнерго»
-                      в отопительный период. Автоцистерна поделена на две
-                      секции, что позволит доставлять небольшие объемы для слива
-                      топлива на котельных. По постановлению СМ РК № 721 ( от 24
-                      ноября 2020г.) «Об утверждении Порядка предоставления
-                      субсидии юридическим лицам, не являющимся государственными
-                      учреждениями, на финансовое обеспечение и (или) возмещение
-                      затрат на непредвиденные расходы для проведения
-                      мероприятий по обеспечению подвоза воды
-                      спецавтотранспортом к котельным ГУП РК
-                      «Крымтеплокоммунэнерго» за счет средств резервного фонда
-                      ССМ РК» закуплены 10 автоцистерн Для перевозки технической
-                      воды, для нужд котельных в целях обеспечения бесперебойной
-                      работы.
-                    </p>
-                  </div>
-                </div>
-                <div class="news__item-footer">
-                  <date class="news__item-date">07.02.2021</date>
-                  <a class="news__item-readmore btn link" href="">Читать далее</a>
-                </div>
-              </div>
-              <div class="news__item">
-                <div class="news__item-content">
-                  <a class="news__item-link" href=""><img class="news__item-img" src="images/news-item3.jpg"
-                      alt="50 лет КТКЭ" />
-                  </a>
-                  <div class="news__item-text">
-                    <a class="news__item-link link" href="">
-                      <h4 class="news__item-title">
-                        Выездная проверка в филиале ГУП РК
-                        "Крымтеплокоммунэнерго" в г. Ялта
-                      </h4>
-                    </a>
-                    <p class="news__item-descr">
-                      Генеральный директор ГУП РК «Крымтеплокоммунэнерго» Виктор
-                      Васильевич Дойчев провел выездную проверку в Ялтинском
-                      филиале предприятия связанную с мероприятиями по
-                      обеспечению работы объектов теплоснабжения при подаче воды
-                      на технические нужды по графику.
-                    </p>
-                  </div>
-                </div>
-                <div class="news__item-footer">
-                  <date class="news__item-date">07.02.2021</date>
-                  <a class="news__item-readmore btn link" href="">Читать далее</a>
-                </div>
-              </div>
-              <div class="news__item">
-                <div class="news__item-content">
-                  <a class="news__item-link" href=""><img class="news__item-img" src="images/news-item4.jpg"
-                      alt="50 лет КТКЭ" />
-                  </a>
-                  <div class="news__item-text">
-                    <a class="news__item-link link" href="">
-                      <h4 class="news__item-title">
-                        Выездное комиссионное обследование по адресам: ул.
-                        Б.Куна,27 и Б.Куна,31
-                      </h4>
-                    </a>
-                    <p class="news__item-descr">
-                      9 декабря 2020г., ГУП РК «Крымтеплокоммунэнерго» совместно
-                      с АНО «ЖКХ Контроль РК», провели выездное комиссионное
-                      обследование параметров теплоносителя по адресам: ул.
-                      Б.Куна,27 и Б.Куна,31, где были выявлены нарушения в ВДС.
-                      В настоящее время сотрудники МУП проводят
-                      ремонтно-наладочные работы ВДС.
-                    </p>
-                  </div>
-                </div>
-                <div class="news__item-footer">
-                  <date class="news__item-date">07.02.2021</date>
-                  <a class="news__item-readmore btn link" href="">Читать далее</a>
-                </div>
+          <div class="header__inner">
+            <div class="header__logo">
+              <a class="logo" href="/">
+                <img class="logo__img" src="images/logo.png" alt="logo" />
+              </a>
+              <div class="header__name">
+                <p class="header__tagline title">Мы приносим</p>
+                <h1 class="header__title title">
+                  Крым<span class="header__title header__title--red title"
+                    >тепло</span
+                  >коммунэнерго
+                </h1>
+                <p class="header__tagline title">в ваш дом</p>
               </div>
             </div>
 
-          </section>
-
-          <aside class="sidebar">
-            <section class="sidebar__news latest-news">
-              <h4 class="latest-news__title title">Свежие новости</h4>
-              <ul class="latest-news__items">
-                <li class="latest-news__item">
-                  <a class="latest-news__item-link link" href="">
-                    <h5 class="latest-news__item-title">
-                      Торжественное собрание в честь юбилея ГУП РК "Крымтеплокоммунэнерго"
-                    </h5>
-                  </a>
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link link">О нас</a>
+                  <ul class="menu__list submenu">
+                    <li class="menu__item">
+                      <a class="menu__link link" href="#"
+                        >История предприятия</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Руководство</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Структура</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="latest-news__item">
-                  <a class="latest-news__item-link link" href="">
-                    <h5 class="latest-news__item-title">
-                      14 едениц новой спецтехники
-                    </h5>
-                  </a>
+                <li class="menu__item">
+                  <a class="menu__link link">Потребителям</a>
+                  <ul class="menu__list submenu">
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Личный кабинет</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Новости</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Тарифы</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link">Тех. подключение</a>
+                      <ul class="menu__list submenu">
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >Порядок подключения</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link link" href="">Подать заявку</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Вопрос - Ответ</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Отключения</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Передать показания</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Оплата услуг</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="latest-news__item">
-                  <a class="latest-news__item-link link" href="">
-                    <h5 class="latest-news__item-title">
-                      Выездная проверка в филиале ГУП РК "Крымтеплокоммунэнерго" в г. Ялта
-                    </h5>
-                  </a>
+                <li class="menu__item">
+                  <a class="menu__link link">Раскрытие информации</a>
+                  <ul class="menu__list submenu">
+                    <li class="menu__item">
+                      <a class="menu__link link">Закупки</a>
+                      <ul class="menu__list submenu">
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >Положение о закупках 223-ФЗ</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >План закупок 223-ФЗ</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >План-график 44-ФЗ</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >Закупки 223-ФЗ и 44-ФЗ</a
+                          >
+                        </li>
+                        <li class="menu__item">
+                          <a class="menu__link link" href=""
+                            >Отчеты по заключенным договорам 223-ФЗ</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href=""
+                        >Бухгалтерский баланс</a
+                      >
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Охрана труда</a>
+                    </li>
+                    <li class="menu__item">
+                      <a class="menu__link link" href="">Тех.присоединение</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="latest-news__item">
-                  <a class="latest-news__item-link link" href="">
-                    <h5 class="latest-news__item-title">
-                      Выездное комиссионное обследование по адресам: ул. Б.Куна,27 и Б.Куна,31
-                    </h5>
-                  </a>
+                <li class="menu__item">
+                  <a class="menu__link link" href="">Сотрудникам</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link link" href="">Партнеры</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link link" href="/contacts.html">Контакты</a>
                 </li>
               </ul>
-              <a class="latest-news__btn btn link" href="">Все новости</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="" class="breadcrumbs__link link">Новости</a>
+            </li>
+          </ul>
+          <div class="main__inner">
+            <section class="news news--category">
+              <h1 class="news__title news__title--category title">
+                Торжественное собрание в честь юбилея ГУП РК
+                "Крымтеплокоммунэнерго"
+              </h1>
+              <div class="news__items news__items--category">
+                <div class="news__item">
+                  <div class="news__item-content">
+                    <a class="news__item-link" href="single.html"
+                      ><img
+                        class="news__item-img"
+                        src="images/news-item1.jpg"
+                        alt="50 лет КТКЭ"
+                      />
+                    </a>
+                    <div class="news__item-text">
+                      <a class="news__item-link link" href="single.html">
+                        <h4 class="news__item-title">
+                          Торжественное собрание в честь юбилея ГУП РК
+                          "Крымтеплокоммунэнерго"
+                        </h4>
+                      </a>
+                      <p class="news__item-descr">
+                        В мероприятии приняли участие ветераны труда,
+                        заместитель Председателя Совета министров Республики
+                        Крым Светлана Маслова, Председатель Комитета
+                        Государственного Совета республики по жилищной политике
+                        и жилищно-коммунальному хозяйству Алексей Гусев,
+                        временно исполняющий обязанности министра
+                        жилищно-коммунального хозяйства Республики Крым Сергей
+                        Донец, заместитель министра жилищно-коммунального
+                        хозяйства Республики Крым Исмет Аблаев, глава
+                        администрации города Симферополя Елена Проценко,
+                        председатель Симферопольского городского совета Виктор
+                        Агеев, представитель КРО общероссийского профсоюза
+                        работников жизнеобеспечения, председатель молодёжного
+                        совета профсоюзов Валентина Мигелёва, генеральный
+                        директор ГУП РК «Вода Крыма» Владимир Баженов,
+                        представитель ГУП РК «Крымэнерго» Игорь Дворный и
+                        сотрудники предприятия. Открывая мероприятие, сотрудники
+                        предприятия исполнили его гимн, написанный оператором
+                        теплового пункта А.Н.Жировым. Заместитель Председателя
+                        Совета министров Республики Крым Светлана Маслова
+                        зачитала приветственный адрес Главы Республики Крым
+                        Сергея Аксёнова, в котором отмечается, что предприятие и
+                        весь коллектив добросовестно выполняет свою основную
+                        задачу по обеспечению теплом и горячим водоснабжением
+                        потребителей Республики Крым. Кроме того, вице-премьер
+                        наградила благодарностью Главы Республики Крым
+                        генерального директора предприятия Виктора Дойчева за
+                        добросовестный труд и высокий профессионализм при
+                        выполнении задач гражданской обороны. Помимо
+                        поздравлений в адрес предприятия-юбиляра, приглашенные
+                        гости также выразили искренние слова благодарности за
+                        весомый вклад в его становление и развитие,
+                        самоотверженный труд и профессионализм ветеранам
+                        отрасли.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news__item-footer">
+                    <date class="news__item-date">07.02.2021</date>
+                    <a class="news__item-readmore btn link" href="single.html"
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+                <div class="news__item">
+                  <div class="news__item-content">
+                    <a class="news__item-link" href=""
+                      ><img
+                        class="news__item-img"
+                        src="images/news-item2.jpg"
+                        alt="50 лет КТКЭ"
+                      />
+                    </a>
+                    <div class="news__item-text">
+                      <a class="news__item-link link" href="">
+                        <h4 class="news__item-title">
+                          14 едениц новой спецтехники
+                        </h4>
+                      </a>
+                      <p class="news__item-descr">
+                        В соответствии с Постановлением СМ РК № 104 от
+                        05.03.2018 г. подписано Соглашение между Министерством
+                        ЖКХ Республики Крым и ГУП РК «Крымтеплокоммунэнерго» «О
+                        предоставлении из бюджета Республики Крым субсидии
+                        юридическим лицам, на финансовое обеспечение мероприятий
+                        в рамках Государственной программы реформирования
+                        жилищно-коммунального хозяйства РК» Предприятием
+                        закуплена специализированная техника в количестве -14
+                        единиц на сумму-76мил. 371 тыс.руб.. что позволит
+                        обновить автопарк на 26%. Экскаватор-погрузчик с
+                        глубинным копанием 5,7м. Имеющаяся на балансе ГУП РК
+                        «КТКЭ» техника не справляется в полном объеме с
+                        поставленными задачами, а именно проведение земляных
+                        работ повышенной сложности, такие как планировка
+                        территории, разработка и погрузка грунта, рытье
+                        котлованов и траншей. Два крана-манипулятора оснащенные
+                        сертифицированной люлькой, высотой до 22м. Позволит
+                        производить высотные работы на труднодоступных участках
+                        и одновременно производить погрузочно-разгрузочные
+                        работы. Что позволит сэкономить количество используемой
+                        техники на любом участке работ. Одна автоцистерна для
+                        транспортировки нефтепродуктов. Данный автомобиль
+                        необходим предприятию для осуществления перевозок
+                        нефтепродуктов, как светлых так и темных, необходимых
+                        для бесперебойной работоспособности котельных ГУП РК
+                        «Крымтеплокоммунэнерго» в отопительный период.
+                        Автоцистерна поделена на две секции, что позволит
+                        доставлять небольшие объемы для слива топлива на
+                        котельных. По постановлению СМ РК № 721 ( от 24 ноября
+                        2020г.) «Об утверждении Порядка предоставления субсидии
+                        юридическим лицам, не являющимся государственными
+                        учреждениями, на финансовое обеспечение и (или)
+                        возмещение затрат на непредвиденные расходы для
+                        проведения мероприятий по обеспечению подвоза воды
+                        спецавтотранспортом к котельным ГУП РК
+                        «Крымтеплокоммунэнерго» за счет средств резервного фонда
+                        ССМ РК» закуплены 10 автоцистерн Для перевозки
+                        технической воды, для нужд котельных в целях обеспечения
+                        бесперебойной работы.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news__item-footer">
+                    <date class="news__item-date">07.02.2021</date>
+                    <a class="news__item-readmore btn link" href=""
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+                <div class="news__item">
+                  <div class="news__item-content">
+                    <a class="news__item-link" href=""
+                      ><img
+                        class="news__item-img"
+                        src="images/news-item3.jpg"
+                        alt="50 лет КТКЭ"
+                      />
+                    </a>
+                    <div class="news__item-text">
+                      <a class="news__item-link link" href="">
+                        <h4 class="news__item-title">
+                          Выездная проверка в филиале ГУП РК
+                          "Крымтеплокоммунэнерго" в г. Ялта
+                        </h4>
+                      </a>
+                      <p class="news__item-descr">
+                        Генеральный директор ГУП РК «Крымтеплокоммунэнерго»
+                        Виктор Васильевич Дойчев провел выездную проверку в
+                        Ялтинском филиале предприятия связанную с мероприятиями
+                        по обеспечению работы объектов теплоснабжения при подаче
+                        воды на технические нужды по графику.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news__item-footer">
+                    <date class="news__item-date">07.02.2021</date>
+                    <a class="news__item-readmore btn link" href=""
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+                <div class="news__item">
+                  <div class="news__item-content">
+                    <a class="news__item-link" href=""
+                      ><img
+                        class="news__item-img"
+                        src="images/news-item4.jpg"
+                        alt="50 лет КТКЭ"
+                      />
+                    </a>
+                    <div class="news__item-text">
+                      <a class="news__item-link link" href="">
+                        <h4 class="news__item-title">
+                          Выездное комиссионное обследование по адресам: ул.
+                          Б.Куна,27 и Б.Куна,31
+                        </h4>
+                      </a>
+                      <p class="news__item-descr">
+                        9 декабря 2020г., ГУП РК «Крымтеплокоммунэнерго»
+                        совместно с АНО «ЖКХ Контроль РК», провели выездное
+                        комиссионное обследование параметров теплоносителя по
+                        адресам: ул. Б.Куна,27 и Б.Куна,31, где были выявлены
+                        нарушения в ВДС. В настоящее время сотрудники МУП
+                        проводят ремонтно-наладочные работы ВДС.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="news__item-footer">
+                    <date class="news__item-date">07.02.2021</date>
+                    <a class="news__item-readmore btn link" href=""
+                      >Читать далее</a
+                    >
+                  </div>
+                </div>
+              </div>
             </section>
-          </aside>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <a class="logo" href="/">
-            <img class="logo__img footer__logo" src="images/logo.png" alt="logo" />
-          </a>
-          <div class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">О нас</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">Потребителям</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">Раскрытие информации</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">Сотрудникам</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">Контакты</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="">Личный кабинет</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__menu">
-            <ul class="footer__menu-list">
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="tel:88005068006">8(800) 506-80-06</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-link link" href="mailto:kanc@tce.crimea.com">kanc@tce.crimea.com</a>
-              </li>
-              <li class="footer__menu-item">
-                <a class="footer__menu-icon" href="#"></a>
-                <a class="footer__menu-icon" href="#"></a>
-              </li>
-            </ul>
+
+            <aside class="sidebar">
+              <section class="sidebar__news latest-news">
+                <h4 class="latest-news__title title">Свежие новости</h4>
+                <ul class="latest-news__items">
+                  <li class="latest-news__item">
+                    <a class="latest-news__item-link link" href="">
+                      <h5 class="latest-news__item-title">
+                        Торжественное собрание в честь юбилея ГУП РК
+                        "Крымтеплокоммунэнерго"
+                      </h5>
+                    </a>
+                  </li>
+                  <li class="latest-news__item">
+                    <a class="latest-news__item-link link" href="">
+                      <h5 class="latest-news__item-title">
+                        14 едениц новой спецтехники
+                      </h5>
+                    </a>
+                  </li>
+                  <li class="latest-news__item">
+                    <a class="latest-news__item-link link" href="">
+                      <h5 class="latest-news__item-title">
+                        Выездная проверка в филиале ГУП РК
+                        "Крымтеплокоммунэнерго" в г. Ялта
+                      </h5>
+                    </a>
+                  </li>
+                  <li class="latest-news__item">
+                    <a class="latest-news__item-link link" href="">
+                      <h5 class="latest-news__item-title">
+                        Выездное комиссионное обследование по адресам: ул.
+                        Б.Куна,27 и Б.Куна,31
+                      </h5>
+                    </a>
+                  </li>
+                </ul>
+                <a class="latest-news__btn btn link" href="">Все новости</a>
+              </section>
+            </aside>
           </div>
         </div>
-        <p class="footer__copy">
-          &copy; 2014 - <span class="this-year"></span> ГУП РК
-          "Крымтеплокоммунэнерго"
-        </p>
-      </div>
-    </footer>
-  </div>
-  <a href="#" class="scrollup"></a>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <a class="logo" href="/">
+              <img
+                class="logo__img footer__logo"
+                src="images/logo.png"
+                alt="logo"
+              />
+            </a>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="">О нас</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="">Потребителям</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href=""
+                    >Раскрытие информации</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="">Сотрудникам</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="">Контакты</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="">Личный кабинет</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a class="footer__menu-link link" href="tel:88005068006"
+                    >8(800) 506-80-06</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-link link"
+                    href="mailto:kanc@tce.crimea.com"
+                    >kanc@tce.crimea.com</a
+                  >
+                </li>
+                <li class="footer__menu-item">
+                  <a class="footer__menu-icon" href="#"></a>
+                  <a class="footer__menu-icon" href="#"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="footer__copy">
+            &copy; 2014 - <span class="this-year"></span> ГУП РК
+            "Крымтеплокоммунэнерго"
+          </p>
+        </div>
+      </footer>
+    </div>
+    <a href="#" class="scrollup"></a>
 
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

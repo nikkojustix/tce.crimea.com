@@ -1,10 +1,11 @@
 .breadcrumbs {
+  overflow-x: auto;
+  overflow-y: hidden;
   position: relative;
-  grid-column: 1 / span 2;
-  width: 100%;
   display: flex;
   background-color: $primary;
   font-size: 14px;
+  white-space: nowrap;
 
   &__item {
     position: relative;
@@ -13,7 +14,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       background-image: url(../../images/breadcrumbs-sep.svg);
       width: 16px;
       height: 100%;
@@ -21,25 +22,4 @@
       top: 0;
     }
   }
-
-  &::before,
-  &::after {
-    position: absolute;
-    top: -6px;
-    content: '';
-    width: 10px;
-    height: 48px;
-    background-color: $primary;
-    border-radius: 4px;
-  }
-
-  &::before {
-    left: -12px;
-  }
-
-  &::after {
-    right: -12px;
-  }
-
-
 }

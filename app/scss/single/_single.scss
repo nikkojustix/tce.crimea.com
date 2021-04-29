@@ -1,6 +1,11 @@
 .post {
   overflow: hidden;
 
+  &__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
   &__text {
     font-size: 18px;
     margin-bottom: 40px;
@@ -39,7 +44,6 @@
       height: 150px;
       padding: 15px;
     }
-
   }
 }
 
@@ -47,5 +51,14 @@
   .post__thumbs-img {
     height: 100px;
     padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .post {
+    &__title {
+      font-size: 22px;
+      line-height: 24px;
+    }
   }
 }

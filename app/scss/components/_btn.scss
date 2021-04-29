@@ -17,3 +17,10 @@
     border: 2px solid transparent;
   }
 }
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

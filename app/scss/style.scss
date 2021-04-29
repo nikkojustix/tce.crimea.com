@@ -51,15 +51,14 @@ body {
 .main {
   &__inner {
     display: flex;
-    gap: 40px;
+    column-gap: 40px;
     margin-bottom: 50px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main__inner {
     flex-direction: column;
-
   }
 }
 
@@ -81,7 +80,7 @@ body {
 
 @import "contacts/contacts";
 @import "single/single";
-@import 'single/post-media';
+@import "single/post-media";
 @import "sidebar/sidebar";
 @import "sidebar/latest-news";
 
