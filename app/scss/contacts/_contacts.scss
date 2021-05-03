@@ -13,7 +13,7 @@
     font-size: 20px;
     color: $white;
     cursor: pointer;
-    background: $primary;
+    background-color: $primary;
     padding: 10px 55px 10px 15px;
     transition: all 0.3s;
     position: relative;
@@ -66,5 +66,16 @@
     padding: 10px 15px;
     overflow: hidden;
     border-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__title:hover {
+    color: $white;
+    background-color: $primary;
+    &::before,
+    &::after {
+      background-color: $white;
+    }
   }
 }
