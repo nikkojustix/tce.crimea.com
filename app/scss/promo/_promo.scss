@@ -12,12 +12,12 @@
     display: block;
     padding: 20px 110px 20px 20px;
     background-color: $light-accent;
-    border-radius: 10px;
-    transition: ease 0.8s;
+    transition: ease 0.3s;
   }
 
   &__item:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 2px rgba($font-color, 0.3);
   }
 
   &__item::after {

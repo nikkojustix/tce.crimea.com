@@ -33,7 +33,6 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
 
   &--disable {
@@ -49,6 +48,8 @@ body {
 }
 
 .main {
+  flex-grow: 1;
+
   &__inner {
     display: flex;
     column-gap: 40px;
@@ -66,6 +67,7 @@ body {
 @import "components/link";
 @import "components/btn";
 @import "components/breadcrumbs";
+@import "components/404";
 
 @import "header/header";
 @import "header/burger";

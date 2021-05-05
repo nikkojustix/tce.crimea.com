@@ -432,7 +432,6 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh; }
   .wrapper--disable {
     overflow: hidden;
@@ -443,11 +442,13 @@ body {
   padding: 0 15px;
   max-width: 1230px; }
 
-.main__inner {
-  display: flex;
-  -moz-column-gap: 40px;
-       column-gap: 40px;
-  margin-bottom: 50px; }
+.main {
+  flex-grow: 1; }
+  .main__inner {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-bottom: 50px; }
 
 @media (max-width: 992px) {
   .main__inner {
@@ -509,6 +510,11 @@ body {
       right: -7px;
       top: 0; }
 
+.not-found {
+  margin: 50px auto;
+  max-width: 500px;
+  width: 100%; }
+
 .header__topbar {
   background-color: #dd9a23; }
 
@@ -530,9 +536,9 @@ body {
 
 .header__search {
   width: 250px;
+  color: inherit;
   background-color: #f6ce52;
   border: none;
-  border-radius: 20px 0 0 20px;
   padding: 10px;
   font-size: 14px; }
 
@@ -542,7 +548,6 @@ body {
   height: 37px;
   border: none;
   background-color: #f6ce52;
-  border-radius: 0 20px 20px 0;
   cursor: pointer; }
   .header__search-btn::before, .header__search-btn::after {
     position: absolute;
@@ -971,10 +976,10 @@ body {
     display: block;
     padding: 20px 110px 20px 20px;
     background-color: #f6ce52;
-    border-radius: 10px;
-    transition: ease 0.8s; }
+    transition: ease 0.3s; }
   .promo__item:hover {
-    transform: scale(1.05); }
+    transform: translateY(-5px);
+    box-shadow: 0 5px 5px 2px rgba(68, 68, 68, 0.3); }
   .promo__item::after {
     position: absolute;
     right: 15px;
@@ -1033,7 +1038,7 @@ body {
 
 .news {
   margin: 75px 0; }
-  .news--category {
+  .news--column {
     margin: 0; }
   .news__inner {
     text-align: center; }
@@ -1045,7 +1050,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 30px; }
-    .news__items--category {
+    .news__items--column {
       flex-direction: column; }
   .news__item {
     display: flex;
@@ -1233,9 +1238,12 @@ body {
   display: block; }
 
 .contact-us__textarea {
+  display: block;
   max-width: 100%; }
 
 .contact-us__btn {
+  display: block;
+  margin-top: 10px;
   width: 100%; }
 
 @media (max-width: 992px) {
